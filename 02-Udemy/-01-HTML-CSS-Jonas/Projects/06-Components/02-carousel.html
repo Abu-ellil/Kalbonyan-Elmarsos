@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+  
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+        border-bottom: #028329;
+        line-height: 1;
+      }
+      img{
+        /* padding-left: 50px; */
+        transform: scale(1.5);
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0 12px 24px rgba(0,0,0,55%);
+      }
+      .carousel{
+        width: 800px;
+        margin: 100px auto;
+        background-color: #12682c;
+        padding: 32px 48px 32px 86px;
+        /* padding-left: 86px;
+        padding-right: 48px; */
+        border-radius: 8px;
+        /* color: #fff; */
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }  
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcf5;
+      }
+      .testimonial-author {
+font-size: 14px;
+color: #e6fcf5;
+      }
+      .testimonial-jop {
+font-size: 12px;
+color: #e6fcf5;
+      }
+      .btn{
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
+      .btn-icon{
+        height: 24px;
+        width: 24px;
+        stroke: #028329
+      }
+      .btn--right{
+        right: 0;
+        top: 50%;
+        transform: translate(50% ,-50%);
+      }
+      .btn--left{
+        top: 50%;
+        transform: translate(-50% ,-50%);
+        left: 0;
+      }
+      .dots{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+      }
+      .dot{
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border: 2px solid #12682c;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot--fill{
+        
+        background-color: #028329;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="carousel">
+      <img src="maria.jpg" />
+      <blockquote>
+        <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum modi quia, ipsam quam molestiae commodi animi ducimus corrupti a?</p>
+        <p class="testimonial-author">Maria de Almeda</p>
+        <p class="testimonial-jop">Senior Product Manager at EDP Comercial</p>
+      </blockquote>
+      <button class="btn btn--left"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+      </button>
+      <button class="btn btn--right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      </button>
+      <div class="dots">
+        <div class="dot">&nbsp;</div>
+        <div class="dot dot--fill">&nbsp;</div>
+        <div class="dot">&nbsp;</div>
+        <div class="dot">&nbsp;</div>
+      </div>
+    </div>
+
+  </body>
+</html>

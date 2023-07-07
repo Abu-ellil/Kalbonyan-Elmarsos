@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Num Pages</title>
+  
+    <style>
+      /* 
+MAIN COLOR: #087F5B
+GRAYCOLOR: #343A40
+*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+        border-bottom: #028329;
+        line-height: 1;
+         display: flex;
+        justify-content: center;
+        padding-top: 200px; 
+      }
+      .container{
+        /* width: 800px; */
+       padding: 48px;
+        position: relative;
+      }
+      .btn{
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius:50%;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        border: #028329 solid 1px;
+      }
+      .btn :hover{
+        background-color: #028329;
+        height: 100%;
+        width: 100%;
+        stroke: #f9faf9;
+        border-radius: 100px;
+      }
+      .btn-icon{
+        height: 24px;
+        width: 24px;
+        stroke: #028329
+      }
+      .btn--right{
+        right: 0;
+        top: 50%;
+        transform: translate(50% ,-50%);
+      }
+      .btn--left{
+        top: 50%;
+        transform: translate(-50% ,-50%);
+        left: 0;
+      }
+       .numbers{
+         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* gap: 48px; */
+      }  
+      .links:link, .links:visited{
+        height: 36px;
+        width: 36px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .numbers a:hover{
+        color: #fff;
+        background-color: #028329;
+        
+        stroke: #f9faf9;
+        border-radius: 100px;
+      } 
+      .dots{
+        font-size: 18px;
+        padding: 6px;
+      }
+      .active-link{
+        background-color: #028329;
+        border-radius: 50%;
+        color: #fff;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     <div class="numbers">
+      <button class="btn btn--left"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+      </button>
+      <a class="links" href="">1</a>
+      <a class="links" href="">2</a>
+      <a class="links active-link" href="">3</a>
+      <a class="links" href="">4</a>
+      <a class="links" href="">5</a>
+      <a class="links" href="">6</a>
+      <span class="dots">...</span>
+      <a class="links" href=>23</a>
+     </div> 
+ 
+    <button class="btn btn--right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+    </svg>
+    </button>
+  </div>
+  </body>
+</html>

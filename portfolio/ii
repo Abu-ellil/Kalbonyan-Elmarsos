@@ -1,0 +1,28 @@
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = (e) => {
+    e.preventDefault();
+    setShowMore(!showMore);
+  };
+
+     <p>
+            {showMore ? (
+              <>
+             Focus on developing Single-Page Applications using the MERN stack.
+            SPAs provide a seamless user experience by dynamically updating
+            content on a single web page without requiring page reloads.
+            Services would involve leveraging React to create interactive user
+            interfaces, handling client-side rendering, and utilizing Express.js
+            and Node.js to build a robust backend that supports the SPA. 
+              </>
+            ) : (
+              <>
+               Focus on developing Single-Page Applications using the MERN stack.
+            SPAs provide a seamless user experience by dynamically updating
+            content on a single web page without requiring page reloads.
+              </>
+            )}
+          </p>
+          <a href="#" className="btn" onClick={toggleShowMore}>
+            {showMore ? "Read Less" : "Read More"}
+          </a>

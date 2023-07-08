@@ -1,0 +1,32 @@
+.about-us {
+  display: flex;
+  padding: 6rem 0;
+  align-items: start;
+}
+
+.title {
+  color: #6666663b;
+  font-family: "Lora";
+  font-size: 7.5rem;
+  font-weight: 700;
+}
+.about-titles {
+  position: relative;
+  padding: 40px 40px;
+}
+.about-titles h2 {
+  font-size: 3rem;
+  position: absolute;
+  top: 110px;
+  color: #741906;
+  padding: 10px;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  text-align: start;
+  font-size: 26px;
+  gap: 40px;
+  color: #555;
+}

@@ -1,0 +1,146 @@
+.nav {
+  top: 0;
+  background: transparent;
+  background-size: cover;
+  display: flex;
+  gap: 19%;
+  font-size: 28px;
+  color: #fff;
+  padding: 20px 70px;
+  z-index: 100;
+  width: 1440px;
+  position: fixed;
+  transition: all .3s ease-in-out;
+}
+.nav.fixed {
+  background-color: #ff2b01;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+  color: #12273d;
+  box-shadow: 0px 2px 12px #33333362;
+}
+.logo {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  right: 10%;
+}
+.logo:hover {
+  color: #741906;
+  scale: 1.3;
+}
+.logo span {
+  font-weight: 700;
+  font-family: "Lora";
+}
+.links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  text-align: center;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+a:hover {
+  cursor: pointer;
+  color: #741906;
+}
+.links li:active {
+  color: #fff;
+}
+.navbar.scrolled .links li a {
+  color: #12273d;
+}
+
+.links-cart {
+  display: flex;
+  gap: 20px;
+}
+.active {
+  border-radius: 6px;
+  display: inherit;
+  background-color: #741906;
+  padding: 12px 25px;
+  width: 100%;
+}
+.active .links li a {
+  color: #fff;
+}
+.navbar.scrolled  .links li a.active {
+    color: #fcfcfc;
+}
+.cart {
+  display: flex;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+}
+.cart svg {
+  color: #858585;
+}
+.cart:hover,
+.cart svg:hover {
+  color: #fa431e;
+}
+.prod {
+  height: 25px;
+  width: 25px;
+  background-color: #ca4327;
+  border-radius: 6px;
+  font-size: 19px;
+  position: absolute;
+  left: 26px;
+  bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.nav-mini-bar {
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+   
+}
+.dorp-navbar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 4px;
+  top: 74px;
+ transition: all .3s ease-in-out; 
+ transform: translateX(1242px);
+}
+.drop-links {
+  background-color: #000000b5;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  width: 384px;
+  color: #fff;
+  padding-top: 14rem;
+ 
+  transition: transform 0.3s ease-in-out;
+}
+
+
+ .hide {
+    display: block;
+    transform: translateX(1px);
+  }

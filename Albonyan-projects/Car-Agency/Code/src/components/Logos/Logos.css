@@ -1,0 +1,10 @@
+.logos {
+  width: 100%;
+  height: 550px;
+  background-color: #dfdbcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* transition: all .1s ease-in-out; */
+}
+#root {
+  margin: 0 auto;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.btn {
+  background: transparent;
+  border: #fff 2px solid;
+  border-radius: 6px;
+}
+
+@media (max-width: 1920px) {
+  .cart-container{
+    transform: translateX(520px);
+  }
+      
+    .CartDropdown.visible {
+  transform: translateX(-120px);
+}}
+@media (max-width: 1620px) {
+  }
+    .CartDropdown.visible {
+  transform: translateX(-90px);
+}
+@media (max-width: 1520px) {
+  }
+    .CartDropdown.visible {
+  transform: translateX(-70px);
+}
+@media (max-width: 1440px) {
+  }
+    .CartDropdown.visible {
+  transform: translateX(0px);
+  }
+
+@media (max-width: 1680px) {
+  .nav {
+    gap: 10%;
+  }
+}
+@media (max-width: 1380px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1250px) {
+  .cart-container {
+    right: 402px;
+    transform: translateX(400px);}
+  .main {
+    width: 100%;
+  }
+  .nav-mini-bar {
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .links-cart {
+    display: none;
+  }
+
+  .drop-links .visible {
+    display: block;
+  }
+  .hero-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: end;
+    color: #fff;
+    align-items: end;
+    padding: 11rem 13rem;
+    gap: 4rem;
+  }
+  .hero-text {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    gap: 2rem;
+    align-items: center;
+  }
+  .about-content {
+    display: flex;
+    padding: 0px 1rem;
+    text-align: start;
+    font-size: 17px;
+    gap: 32px;
+    color: #555;
+  }
+  .service {
+    display: flex;
+    padding: 4rem 1rem;
+    gap: 2rem;
+  }
+  .cars-gallery {
+    height: 55vh;
+  }
+  .testmonial-car {
+    position: absolute;
+    right: 0rem;
+    top: 31rem;
+  }
+  .testimonials-card {
+    width: 80%;
+  }
+  .testimonials {
+    gap: 4rem;
+  }
+  .foo {
+    font-size: 1rem;
+  }
+  .footer-body {
+    display: flex;
+    align-items: baseline;
+    padding: 19px;
+    gap: 4rem;
+  }
+ 
+}
+
+@media (max-width: 1000px) {
+
+.car-card-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+  .CartButton {
+    right: 41%;
+  }
+}
+
+@media (max-width: 800px) {
+  .shop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 116vw;
+    min-height: 70vh;
+}
+  .CartDropdown {
+    left: auto;
+    right: 0px;
+    width: -webkit-fill-available;
+  }
+  .services {
+    height: auto;
+    background: #8d8b8b6c;
+  }
+  .about-titles h2 {
+    top: 77px;
+  }
+  .cards-title h2 {
+    top: -47px;
+    left: 7%;
+}
+
+  .hero-text {
+    padding: 0rem 0rem;
+    gap: 8rem;
+  }
+  .about-us img {
+    display: none;
+  }
+  .title {
+    font-size: 5.5rem;
+  }
+  .testimonials .title {
+    font-size: 4rem;
+  }
+  .testimonials h2 {
+    top: 38px;
+    left: 24%;
+  }
+  .testimonials-card {
+    width: 102%;
+  }
+  .testimonials-card {
+    height: 502px;
+  }
+  .testmonial-car {
+    position: absolute;
+    right: 0rem;
+    top: 38rem;
+  }
+  .services h2 {
+    top: 40px;
+    left: 31%;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    font-size: 16%;
+  }
+  .cards-main {
+    min-height: 100vh;
+    margin-top: 50px;
+  }
+  .cars-gallery {
+    width: 73%;
+    height: 100vh;
+    background: url(./components/img/cars/carsGallerysmall.png);
+    background-size: cover;
+  }
+  .footer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .foo {
+    width: 100%;
+  }
+  .car-card img {
+   
+}
+}
+
+@media (max-width: 500px) {
+.cart-dropdown {
+    width: 100%;
+    height: 92vh;
+    top: 78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .foo p {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-title h2 {
+    top: 40px;
+    left: 22%;
+  }
+  .testimonials .title {
+    font-size: 3.5rem;
+  }
+  .testimonials h2 {
+    font-size: 2rem;
+    top: 34px;
+    left: 30%;
+  }
+  .foo p svg {
+    font-size: 33px;
+  }
+
+  .testimonials-card {
+    width: 100%;
+  }
+  .testmonial-car {
+    position: absolute;
+    right: 4rem;
+    top: 41rem;
+  }
+  .testimonials-card {
+    height: 492px;
+    width: 100%;
+  }
+  .about-titles .title {
+    font-size: 3.5rem;
+  }
+  .about-titles h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 67px;
+    color: #741906;
+    padding: 10px;
+  }
+  .CartDropdown {
+    left: auto;
+    right: 0px;
+    width: -webkit-fill-available;
+  }
+  .cars-gallery{
+        width: 100%;
+    height: 120vh;
+  }
+  .testimonials h2 {
+    font-size: 2rem;
+    top: 97px;
+    left: 30%;
+}
+.testimonials {
+    gap: 0rem;
+}
+.cards-title h2 {
+    top: -46px;
+    left: 4%;
+}
+.content {
+    gap: 6rem;
+    align-items: center;
+}
+.cart-container{
+  width:100% ;
+  display: flex;
+}
+}

@@ -25,7 +25,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # Learn Programing Fundamentals ,HTMl and CSS
 
-![100 %](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/100/?title=Done)
 <br />
 
 - ## Programming foundations
@@ -39,7 +39,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 <!-- LEARN HTML, CSS, and GitHub -->
 
 - ## LEARN HTML, CSS, and GitHub
-  ![100%](https://progress-bar.dev/0/?title=Done)
+  ![100%](https://progress-bar.dev/100/?title=Done)
   - [x] ` Done` `37h 30m` - 01 - [Build Responsive Real-World Websites with HTML and CSS](02-Udemy/-01-HTML-CSS-Jonas/)
   - [x] ` Done` `4h` - 02 - [Git: Become an Expert in Git & GitHub]()
         <br />
@@ -50,7 +50,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # LEARN JAVASCRIPT
 
-![100%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/100/?title=Done)
 
 - [x] ` Done` `52h 32m` - 01 - [ JavaScript - The Complete Guide 2023 (Beginner + Advanced) ](02-Udemy/-02-Js-Maximilian/)
 - [x] ` Done` `16h 7m` - 02 - [20 Web Projects with vanilla JavaScript](02-Udemy/-03-Vanilla-Web-Projects/)
@@ -60,7 +60,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # LEARN JAVASCRIPT (MERN = MongoDB, Express.js, React.js, NodeJS)
 
-![100%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/100/?title=Done)
 <span id="MERN"></span>
 <br />
 
@@ -87,7 +87,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # LEARN ABOUT CLOUD PROVIDER and SERVERLESS
 
-![0%](https://progress-bar.dev/0/?title=Done)
+![0%](https://progress-bar.dev/100/?title=Done)
 
 - [ ] `in progress` `16h12m` - 16 - [AWS Certified Cloud Practitioner (CLF-C01)](<03-aCloudGuru/AWS%20Certified%20Cloud%20Practitioner%20(CLF-C01)/>)
 - [ ] `in progress` `4h27m` - 17 - [Serverless Functions with Netlify | YouTube ](04-Serverless-Functions-Netlify)
@@ -97,7 +97,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # Projects
 
-![100%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/100/?title=Done)
 |status| Project  | Technologies | Repository                                    | Demo |
 | ---  | -------- | ------------ | --------------------------------------------- | ---- |
 | [x]  | Project 1| HTML CSS     | [Appie](Albonyan-projects/Appie/)             | [Demo](https://abu-ellil.github.io/Appie/) |

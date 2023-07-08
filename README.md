@@ -87,7 +87,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # LEARN ABOUT CLOUD PROVIDER and SERVERLESS
 
-![0%](https://progress-bar.dev/100/?title=Done)
+![0%](https://progress-bar.dev/0/?title=Done)
 
 - [ ] `in progress` `16h12m` - 16 - [AWS Certified Cloud Practitioner (CLF-C01)](<03-aCloudGuru/AWS%20Certified%20Cloud%20Practitioner%20(CLF-C01)/>)
 - [ ] `in progress` `4h27m` - 17 - [Serverless Functions with Netlify | YouTube ](04-Serverless-Functions-Netlify)

@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap");
+
+.main {
+  height: 150vh;
+  width: 100%;
+  font-family: Josefin Sans, "Almarai";
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todos-main {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+  width: 40%;
+
+} 
+.todos-pages {
+  width: 100%;
+  top: 50%;
+}
+.add-todo {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.add-todo input {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+}
+
+.todo-list {
+  width: 100%;
+}
+.todo-ul {
+  color: #494c6b;
+  font-size: 18px;
+  font-family: Josefin Sans;
+  letter-spacing: -0.25px;
+}
+.list-item {
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #33333330;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 1px 2px #494c6b31;
+}
+.check-todo {
+  display: flex;
+}
+.item {
+  font-family: Josefin Sans, "Almarai";
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.1rem;
+  border-radius: 5px;
+}
+.clear-com{
+  cursor: pointer;
+}
+/* /////////////////// */
+/* /////////////////// */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/* ////////////////// */
+.todo-footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Josefin Sans, "Almarai";
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 0.1rem;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  box-shadow: 0px 1px 2px #494c6b31;
+}
+.todo-footer-links .links {
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+}
+.links .a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.links .a:hover , .clear-com:hover{
+  color: var(--primary-color);
+}
+.not-done:hover{
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: .5rem ;
+  border-radius: 9px;
+  transform: scale(1.4);
+  transition: all .5s ease-in-out;
+}
+.links .a.active {
+  color: var(--primary-color);
+}
+.delete-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+.add-item{
+  width: 100%;
+}
+.mid{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #202020;
+  border-right: 1px solid #202020;
+}
+
+.pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  right: .5rem;
+  width: 100%;
+  z-index: 9999; 
+  
+}
+.rtl .pop-up {
+  right: 5rem;
+  top: 1rem;
+}
+
+.slide-container {
+  width: 400px;
+  height: 100px;
+  /* overflow: hidden; */
+  position: relative;
+}
+.light-mode .slide-content{
+  background-color: var(--primary-color);
+}
+
+.slide-content {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* background-color: var(--primary-color); */
+  height: 100px;
+  width: 250px;
+  border-radius: 5px;
+  border: #eee solid 1px;
+  box-shadow: #ff00f2 0px 1px 13px;
+  animation: slideAnimation 1s ;
+  /* opacity: 0; */
+}
+.empty-list-text{
+  text-align: center;
+  padding: 1rem;
+}
+.dark-mode .slide-content{
+  background-color: var(--dark-color);
+}
+.rtl .slide-content{
+  animation: slideAnimationRtl 1s ;
+}
+.err{
+
+}
+.add{
+  background-color: transparent;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translatex(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translatex(-100px);
+     opacity: 1; 
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+@keyframes slideAnimationRtl {
+  0% {
+    transform: translatey(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translatey(-50px);
+     opacity: 1; 
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========= */
+
+@media screen and (max-width: 1200px) {
+  
+element.style {
+}
+.todos-main {
+  width: 50%;
+}
+}
+@media screen and (max-width: 1000px) {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap");
+
+.main {
+font-family: Josefin Sans, "Almarai";
+}
+
+ .checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;}
+
+.todos-main {
+top: 5%;
+width: 80%;
+padding-top: 2rem;
+}
+
+.add-todo {
+margin-bottom: 0.5rem;
+}
+
+.add-todo input {
+font-size: 1.2rem;
+}
+
+.todo-list {
+width: 100%;
+}
+
+.todo-ul {
+font-size: 14px;
+}
+
+.list-item {
+font-size: 1.2rem;
+padding: 0.3rem 0.6rem;
+margin-bottom: 0.5rem;
+}
+
+.checkbox-container {
+padding-left: 20px;
+}
+
+.checkmark {
+height: 20px;
+width: 20px;
+}
+
+.checkmark:after {
+left: 7px;
+top: 3px;
+width: 4px;
+height: 8px;
+}
+
+.todo-footer-links {
+padding: 1rem;
+margin-bottom: 0.5rem;
+}
+
+.delete-button {
+font-size: 1.2rem;
+}
+}
+
+.big{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #494c6b31;
+}
+.com-not, .mini{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+ .checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;}
+.big{
+    display: none;
+    
+}
+.mini{
+  display: block;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.links{
+ 
+}
+.com-not{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 1px 2px #494c6b31;
+}
+.todos-main {
+    top: 5%;
+    width: 90%;
+    padding-top: 3rem;
+}
+
+}

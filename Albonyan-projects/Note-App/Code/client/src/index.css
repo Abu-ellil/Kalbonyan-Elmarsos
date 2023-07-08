@@ -1,0 +1,48 @@
+  @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Rubik:wght@300;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#D375B9;
+  --dark-color:#241229;
+  --secondary-color:#7C8495;
+  --shadow-color:#25273D;
+}
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+.main{
+  min-height: 100vh;
+  background-color: #f5f4f5;
+}
+body {
+  margin: 0;
+  font-family:-apple-system, BlinkMacSystemFont,  'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebe7e7;
+}
+
+.light-mode {
+  background-color: #ebe7e7;
+  color: #333;
+}
+
+
+.done {
+  text-decoration: line-through;
+  opacity: .3;
+}
+
+.rtl .dropdown-window .dropdown-content{
+  right: -330px;
+}

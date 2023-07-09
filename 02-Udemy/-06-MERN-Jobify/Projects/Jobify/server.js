@@ -1,4 +1,5 @@
 import express from 'express';
+import mongoose from 'mongoose';
 const app = express();
 import dotenv from 'dotenv';
 dotenv.config();
@@ -56,7 +57,7 @@ const port = process.env.PORT || 5000;
 
 const start = async () => {
   try {
-    await connectDB('mongodb+srv://mrabuellil:jopify@jopify.wyzyqqg.mongodb.net/');
+    await mongoose.connect('mongodb+srv://mrabuellil:jopify@jopify.wyzyqqg.mongodb.net/');
     app.listen(port, () => {
       console.log(`Server is listening on port ${port}...`);
     });

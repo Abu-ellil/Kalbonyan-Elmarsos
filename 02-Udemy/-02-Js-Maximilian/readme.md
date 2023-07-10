@@ -7,27 +7,24 @@
 ### Calculator (S6)
 
 - [Project Code](./Projects/01-Calculator/)
-- [Live Demo]()
+- [Live Demo](https://main--roaring-phoenix-91b494.netlify.app/01-calculator/)
 
 ### Favorite Movies (S7)
 
 - [Project Code](./Projects/02-Favorite-Movies/)
-- [Live Demo]()
+- [Live Demo](https://main--roaring-phoenix-91b494.netlify.app/02-favorite-movies/)
 
 ### Mini Shop (S10)
 
 - [Project Code](./Projects/03-Mini-Shop/)
-- [Live Demo]()
+- [Live Demo](https://main--roaring-phoenix-91b494.netlify.app/03-mini-shop/)
 
 ### Project Planner (S14)
 
 - [Project Code](./Projects/04-Project-Planner/)
-- [Live Demo]()
+- [Live Demo](https://main--roaring-phoenix-91b494.netlify.app/04-project-planner/)
 
-### Posts (S19)
 
-- [Project Code](./Projects/05-Posts/)
-- [Live Demo]()
 
 ### Map (S29)
 

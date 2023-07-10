@@ -1,31 +1,33 @@
-import useInput from '../hooks/use-input';
+import useInput from "../hooks/use-input";
 
-const isNotEmpty = (value) => value.trim() !== '';
-const isEmail = (value) => value.includes('@');
+const isNotEmpty = (value) => value.trim() !== "";
+const isEmail = (value) => value.includes("@");
 
 const BasicForm = (props) => {
   const {
-    value: firstNameValue,
+    value: fristNameValue,
     isValid: firstNameIsValid,
     hasError: firstNameHasError,
     valueChangeHandler: firstNameChangeHandler,
-    inputBlurHandler: firstNameBlurHandler,
+    inputBlurHandler: firstNameBlurChangeHandler,
     reset: resetFirstName,
   } = useInput(isNotEmpty);
+
   const {
     value: lastNameValue,
     isValid: lastNameIsValid,
     hasError: lastNameHasError,
     valueChangeHandler: lastNameChangeHandler,
-    inputBlurHandler: lastNameBlurHandler,
+    inputBlurHandler: lastNameBlurChangeHandler,
     reset: resetLastName,
   } = useInput(isNotEmpty);
+
   const {
     value: emailValue,
     isValid: emailIsValid,
     hasError: emailHasError,
     valueChangeHandler: emailChangeHandler,
-    inputBlurHandler: emailBlurHandler,
+    inputBlurHandler: emailBlurChangeHandler,
     reset: resetEmail,
   } = useInput(isEmail);
 
@@ -35,63 +37,72 @@ const BasicForm = (props) => {
     formIsValid = true;
   }
 
-  const submitHandler = event => {
-    event.preventDefault();
+  const firstNameClasses = firstNameHasError
+    ? "form-control invalid"
+    : "form-control";
+  const lastNameClasses = lastNameHasError
+    ? "form-control invalid"
+    : "form-control";
+  const emailClasses = emailHasError ? "form-control invalid" : "form-control";
 
+  const submitHandler = (e) => {
+    e.preventDefault();
     if (!formIsValid) {
       return;
     }
 
-    console.log('Submitted!');
-    console.log(firstNameValue, lastNameValue, emailValue);
+    console.log("Submitted");
+    console.log(fristNameValue, lastNameValue, emailValue);
 
     resetFirstName();
     resetLastName();
     resetEmail();
   };
 
-  const firstNameClasses = firstNameHasError ? 'form-control invalid' : 'form-control';
-  const lastNameClasses = lastNameHasError ? 'form-control invalid' : 'form-control';
-  const emailClasses = emailHasError ? 'form-control invalid' : 'form-control';
-
   return (
     <form onSubmit={submitHandler}>
-      <div className='control-group'>
+      <div className="control-group">
         <div className={firstNameClasses}>
-          <label htmlFor='name'>First Name</label>
+          <label htmlFor="first-name">First Name</label>
           <input
-            type='text'
-            id='name'
-            value={firstNameValue}
+            type="text"
+            id="first-name"
+            value={fristNameValue}
             onChange={firstNameChangeHandler}
-            onBlur={firstNameBlurHandler}
+            onBlur={firstNameBlurChangeHandler}
           />
-          {firstNameHasError && <p className="error-text">Please enter a first name.</p>}
+          {firstNameHasError && (
+            <p className="error-text">Please enter a first name</p>
+          )}
         </div>
         <div className={lastNameClasses}>
-          <label htmlFor='name'>Last Name</label>
+          <label htmlFor="Last-name">Last Name</label>
           <input
-            type='text'
-            id='name'
+            type="text"
+            id="Last-name"
             value={lastNameValue}
             onChange={lastNameChangeHandler}
-            onBlur={lastNameBlurHandler}
+            onBlur={lastNameBlurChangeHandler}
           />
-          {lastNameHasError && <p className="error-text">Please enter a last name.</p>}
+          {lastNameHasError && (
+            <p className="error-text">Please enter a last name</p>
+          )}
         </div>
       </div>
       <div className={emailClasses}>
-        <label htmlFor='name'>E-Mail Address</label>
+        <label htmlFor="email">E-Mail Address</label>
         <input
-          type='text'
-          id='name'
+          type="text"
+          id="email"
           value={emailValue}
           onChange={emailChangeHandler}
-          onBlur={emailBlurHandler}
+          onBlur={emailBlurChangeHandler}
         />
-        {emailHasError && <p className="error-text">Please enter a valid email address.</p>}
+        {emailHasError && (
+          <p className="error-text">Please enter a valid Email</p>
+        )}
       </div>
-      <div className='form-actions'>
+      <div className="form-actions">
         <button disabled={!formIsValid}>Submit</button>
       </div>
     </form>

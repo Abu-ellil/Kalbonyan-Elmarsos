@@ -24,7 +24,10 @@
 - [Project Code](./Projects/04-Project-Planner/)
 - [Live Demo](https://main--roaring-phoenix-91b494.netlify.app/04-project-planner/)
 
+### Posts (S19)
 
+- [Project Code](./Projects/05-Posts/)
+- [Live Demo](https://main--roaring-phoenix-91b494.netlify.app/05-posts/)
 
 ### Map (S29)
 

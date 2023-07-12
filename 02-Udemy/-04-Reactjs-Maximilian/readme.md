@@ -85,7 +85,7 @@
 `React + Node`
 
 - [Project-code](./Projects/13-events-app)
-- [Live Demo]()
+- [Live Demo](https://admirable-clafoutis-f99a8c.netlify.app/)
 
 ### Blog(S22)
 

@@ -28,22 +28,22 @@
 ### Section 8-9 Project
 
 - [Project-code](./Projects/03-section-8-9-project)
-- [Live Demo]()
+- [Live Demo](https://main--quiet-cannoli-bb646e.netlify.app/)
 
 ### Login-app (S10)
 
 - [Project-code](./Projects/04-Login-app-s10/)
-- [Live Demo]()
+- [Live Demo](https://main--merry-faloodeh-d33aba.netlify.app/)
 
 ### Order-food App (S11)
 
 - [Project-code](./Projects/05-order-food-app/S11-project/)
-- [Live Demo]()
+- [Live Demo](https://main--curious-paletas-7320fb.netlify.app/)
 
 ### Section 12 Project
 
 - [Project-code](./Projects/06-S12-project)
-- [Live Demo]()
+- [Live Demo](https://main--iridescent-druid-7ac1af.netlify.app/)
 
 ### Section 13 Project
 
@@ -68,7 +68,7 @@
 ### Order-food App (S17)
 
 - [Project Code](./Projects/05-order-food-app/S17-project/)
-- [Final Project Live Live Demo]()
+- [Final Project Live Live Demo](https://main--iridescent-parfait-d5a2b5.netlify.app/)
 
 ### Redux Counter(S18)
 

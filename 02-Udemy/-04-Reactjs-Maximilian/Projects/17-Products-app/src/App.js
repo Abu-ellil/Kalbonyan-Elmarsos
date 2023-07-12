@@ -1,30 +1,20 @@
-import { useState } from 'react';
+import React from 'react';
+import { Route } from 'react-router-dom';
 
-import Header from './components/Layout/Header';
-import Meals from './components/Meals/Meals';
-import Cart from './components/Cart/Cart';
-import CartProvider from './store/CartProvider';
+import Navigation from './components/Nav/Navigation';
+import ProductsPage from './containers/Products';
+import FavoritesPage from './containers/Favorites';
 
-function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
-
-  const showCartHandler = () => {
-    setCartIsShown(true);
-  };
-
-  const hideCartHandler = () => {
-    setCartIsShown(false);
-  };
-
+const App = props => {
   return (
-    <CartProvider>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler} />
+    <React.Fragment>
+      <Navigation />
       <main>
-        <Meals />
+        <Route path="/" component={ProductsPage} exact />
+        <Route path="/favorites" component={FavoritesPage} />
       </main>
-    </CartProvider>
+    </React.Fragment>
   );
-}
+};
 
 export default App;

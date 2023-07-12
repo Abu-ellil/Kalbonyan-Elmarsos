@@ -63,7 +63,7 @@
 ### Form-app(S16)
 
 - [Project-code](./Projects/10-form-app)
-- [Live Demo]()
+- [Live Demo](https://main--whimsical-naiad-cc7991.netlify.app/)
 
 ### Order-food App (S17)
 
@@ -85,7 +85,7 @@
 `React + Node`
 
 - [Project-code](./Projects/13-events-app)
-- [Live Demo]()
+- [Live Demo](https://admirable-clafoutis-f99a8c.netlify.app/)
 
 ### Blog(S22)
 
@@ -95,7 +95,7 @@
 ### Meetups app(S23)
 
 - [Project-code](./Projects/15-meetups-app)
-- [Live Demo]()
+- [Live Demo](https://main--boisterous-dasik-c8589b.netlify.app/)
 
 ### Animation-app (S24)
 

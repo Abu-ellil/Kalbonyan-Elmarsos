@@ -1,18 +1,20 @@
-import { useSelector } from 'react-redux';
+import React, { useContext } from "react";
 
-import Cart from './components/Cart/Cart';
-import Layout from './components/Layout/Layout';
-import Products from './components/Shop/Products';
+import Ingredients from "./components/Ingredients/Ingredients";
+import Auth from "./components/Auth";
 
-function App() {
-  const showCart = useSelector((state) => state.ui.cartIsVisible);
+import { AuthContext } from "./context/auth-context";
 
-  return (
-    <Layout>
-      {showCart && <Cart />}
-      <Products />
-    </Layout>
-  );
-}
+const App = (props) => {
+  const authContext = useContext(AuthContext);
+
+  let content = <Auth />;
+
+  if (authContext.isAuth) {
+    content = <Ingredients />;
+  }
+
+  return content;
+};
 
 export default App;

@@ -95,7 +95,7 @@
 ### Meetups app(S23)
 
 - [Project-code](./Projects/15-meetups-app)
-- [Live Demo]()
+- [Live Demo](https://main--boisterous-dasik-c8589b.netlify.app/)
 
 ### Animation-app (S24)
 

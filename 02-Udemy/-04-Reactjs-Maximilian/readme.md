@@ -105,12 +105,12 @@
 ### Products-app(S25)
 
 - [Project-code](./Projects/17-Products-app)
-- [Live Demo]()
+- [Live Demo](https://main--monumental-beijinho-be05dd.netlify.app/)
 
 ### todo-app-TS(S27)
 
 - [Project-code](./Projects/18-todo-app-TS)
-- [Live Demo]()
+- [Live Demo](https://main--lively-pavlova-2f4fbb.netlify.app/)
 
 ### ingredients-app(S28)
 

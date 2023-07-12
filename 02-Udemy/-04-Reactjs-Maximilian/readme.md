@@ -53,7 +53,7 @@
 ### movies app(S14)
 
 - [Project-code](./Projects/08-movies-app)
-- [Live Demo]()
+- [Live Demo](https://main--bespoke-monstera-795aad.netlify.app/)
 
 ### Tasks app with firebase(S15)
 

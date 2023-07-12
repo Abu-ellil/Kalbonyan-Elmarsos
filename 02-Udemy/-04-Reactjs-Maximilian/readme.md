@@ -90,7 +90,7 @@
 ### Blog(S22)
 
 - [Project-code](./Projects/14-Blog)
-- [Live Demo]()
+- [Live Demo](https://main--boisterous-dasik-c8589b.netlify.app/)
 
 ### Meetups app(S23)
 
@@ -100,7 +100,7 @@
 ### Animation-app (S24)
 
 - [Project-code](./Projects/16-animation-app)
-- [Live Demo]()
+- [Live Demo](https://main--timely-buttercream-31f635.netlify.app/)
 
 ### Products-app(S25)
 

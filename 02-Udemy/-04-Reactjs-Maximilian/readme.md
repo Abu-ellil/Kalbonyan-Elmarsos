@@ -115,14 +115,15 @@
 ### ingredients-app(S28)
 
 - [Project-code](./Projects/19-ingredients-app/)
-- [Live Demo]()
+- [Live Demo](https://main--endearing-snickerdoodle-faedbe.netlify.app/)
 
 ### React Poster(s29)
 
 `React + Node`
 
 - [Project-code](./Projects/20-react-poster/)
-- [Live Demo]()
+- [Live Demo](https://react-max-3a15d.web.app/)
+- [Live Demo](https://react-max-3a15d.web.app/](https://main--capable-sunburst-7edf4a.netlify.app/)
 
 ---
 

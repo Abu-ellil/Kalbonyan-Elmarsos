@@ -58,7 +58,7 @@
 ### Tasks app with firebase(S15)
 
 - [Project-code](./Projects/09-task-app-firbase/)
-- [Live Demo]()
+- [Live Demo](https://main--cute-crumble-54f5c9.netlify.app/)
 
 ### Form-app(S16)
 
@@ -73,12 +73,12 @@
 ### Redux Counter(S18)
 
 - [Project-code](./Projects/11-redux-counter)
-- [Live Demo]()
+- [Live Demo](https://main--sunny-mandazi-728f39.netlify.app/)
 
 ### Redux Cart(S19)
 
 - [Project-code](./Projects/12-redux-cart)
-- [Live Demo]()
+- [Live Demo](https://main--rainbow-sawine-67cd3c.netlify.app/)
 
 ### Events App(S20, S21)
 

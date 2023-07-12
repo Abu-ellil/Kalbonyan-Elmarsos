@@ -22,8 +22,8 @@
 - [Section 7 Code](./Projects/02-goals-app/S07-project/)
   <br/>
 
-- [Section 6 Project Live Demo]()
-- [Section 7 Project Live Demo]()
+- [Section 6 Project Live Demo](https://main--benevolent-twilight-8b94ef.netlify.app/)
+- [Section 7 Project Live Demo](https://main--benevolent-twilight-8b94ef.netlify.app/)
 
 ### Section 8-9 Project
 
